@@ -1,12 +1,12 @@
 # Task Manager in PHP
-Semplice Task Manager sviluppato in PHP con PDO e MySQL, usando Bootstrap 5 per la parte grafica.
+Simple Task Manager developed in PHP using PDO and MySQL, with Bootstrap 5 for the frontend.
 
-## Requisiti
+## Requirements
 - PHP 8.0+
 - MySQL
 
-## Come avviare il progetto
-Clona o scarica questo repository. Crea il database MySQL con questa struttura minima:
+## How to Run the Project
+Clone or download this repository. Create the MySQL database with the following minimal structure:
 
 ```
 CREATE DATABASE taskdb;
@@ -19,13 +19,14 @@ CREATE TABLE tasks (
 );
 ```
 
-Crea un file config.php nella root del progetto (non è incluso nel repository). Deve contenere le credenziali del DB.
+Create a `config.php` file in the root directory of the project (not included in the repository). It must contain the database credentials:
+
 ```
 <?php
 return [
     'host' => 'localhost',
     'dbname' => 'taskdb',
     'user' => 'root',
-    'password' => 'tua_password_db',
+    'password' => 'your_db_password',
 ];
 ```
